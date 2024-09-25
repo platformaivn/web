@@ -1,0 +1,118 @@
+﻿.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.7rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+.error {
+    color: red;
+}
+
+.card-footer button {
+    margin-left: 5px;
+}
+
+.swal2-modal {
+    button {
+        margin: 0.1rem;
+    }
+
+    .swal2-icon-show {
+        margin: 0.5em auto 0.6em;
+    }
+}
+
+/*Custom theme for Platform AI*/
+.navbar-white {
+    background-color: #023e5c;
+    color: #1f2d3d;
+}
+
+[class*=sidebar-dark-] {
+    background-color: #012c41;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 50%);
+}
+
+[class*=sidebar-dark] .btn-sidebar, [class*=sidebar-dark] .form-control-sidebar {
+    background-color: #023e5c;
+    border: 1px solid #5f779080;
+    color: #fff;
+}
+
+[class*=sidebar-dark] .brand-link {
+    border-bottom: 1px solid #5f779040;
+}
+
+[class*=sidebar-dark] .user-panel {
+    border-bottom: 1px solid #5f77904d;
+}
+
+.bg-dark {
+    background-color: #012c41 !important;
+}
+
+[class*=sidebar-dark] .btn-sidebar:focus {
+    background-color: #062138;
+}
+
+[class*=sidebar-dark] .btn-sidebar:hover {
+    background-color: #062138;
+}
+
+.cm-s-mdn-like .CodeMirror-gutters {
+    background: #f8f8f8;
+    border-left: 6px solid #0a587f;
+    color: #333;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0c7e96;
+    border-color: #0c7e96;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b6a7e;
+    border-color: #0b6a7e;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: #095a83;
+    color: #fff;
+}
+
+.provider-token-not-available {
+    background-color: #eabfc3 !important;
+}
+
+@media (max-width: 768px) {
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+
+    table.dataTable {
+        width: 100%;
+        min-width: 600px; /* Adjust based on your table's content */
+    }
+
+    .dataTables_wrapper .row {
+        flex-wrap: nowrap;
+    }
+
+    .modal-lg, .modal-xl {
+        max-width: 100% !important;
+    }
+}
+
