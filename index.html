@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Platform AI</title>
+    <base href="/"/>
+    <!--    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="icon" type="image/png" href="icon.png"/>
+    <link href="Platform.AI.Web.styles.css" rel="stylesheet"/>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"/>
+
+    <link rel="stylesheet" href="plugins/fontawesome-pro/css/all.min.css"/>
+    <link rel="stylesheet" href="plugins/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min2167.css?v=3.2.5"/>
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="plugins/codemirror/codemirror.css">
+    <link rel="stylesheet" href="plugins/codemirror/addon/dialog/dialog.css">
+    <link rel="stylesheet" href="plugins/codemirror/addon/search/matchesonscrollbar.css">
+    <link rel="stylesheet" href="plugins/codemirror/addon/display/fullscreen.css">
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!--    Define themes for code mirror-->
+    <link rel="stylesheet" href="plugins/codemirror/theme/3024-day.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/3024-night.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/abbott.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/abcdef.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/ambiance.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/ayu-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/ayu-mirage.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/base16-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/bespin.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/base16-light.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/blackboard.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/cobalt.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/colorforth.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/dracula.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/duotone-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/duotone-light.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/elegant.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/erlang-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/gruvbox-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/hopscotch.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/icecoder.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/isotope.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/juejin.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/lesser-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/liquibyte.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/lucario.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/material.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/material-darker.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/material-palenight.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/material-ocean.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/mbo.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/mdn-like.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/midnight.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/moxer.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/neat.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/neo.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/night.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/nord.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/oceanic-next.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/panda-syntax.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/paraiso-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/paraiso-light.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/pastel-on-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/railscasts.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/rubyblue.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/seti.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/shadowfox.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/solarized.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/the-matrix.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/tomorrow-night-bright.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/tomorrow-night-eighties.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/ttcn.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/twilight.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/vibrant-ink.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/xq-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/xq-light.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/yeti.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/idea.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/darcula.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/yonce.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/zenburn.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/vscode-dark.css">
+    <link rel="stylesheet" href="plugins/codemirror/theme/clouds.css">
+    <link rel="stylesheet" href="plugins/codemirror/addon/fold/foldgutter.css"/>
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="dist/css/custom.adminlte.css"/>
+</head>
+
+<body class="hold-transition sidebar-mini" style="background: #343a40;">
+<div id="app">
+    <div style="position:absolute; top:22vh; width:100%; text-align:center">
+
+        <svg class="loading-progress" style="color: #ffffff; align-items: center; ">
+            <circle r="40%" cx="50%" cy="50%" style="
+                stroke: #e0e0e0;
+                stroke-width: 0.5rem;
+            "/>
+            <circle r="40%" cx="50%" cy="50%" style="
+                stroke: #365760;
+            "/>
+        </svg>
+        <div class="loading-progress-text" style="color: #ffffff; align-items: center; "></div>
+    </div>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+<script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
+<script src="_framework/blazor.webassembly.js" autostart="false"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="plugins/sparklines/sparkline.js"></script>
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="plugins/sparklines/sparkline.js"></script>
+<script src="plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="plugins/jquery-validation/additional-methods.min.js"></script>
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/inputmask/jquery.inputmask.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="plugins/sweetalert2/sweetalert2.min.js"></script>
+<script src="plugins/toastr/toastr.min.js"></script>
+<script src="dist/js/loadingoverlay.min.js"></script>
+<script src="dist/js/adminlte2167.js?v=3.2.0"></script>
+<script src="plugins/codemirror/codemirror.js"></script>
+<script src="plugins/codemirror/mode/css/css.js"></script>
+<script src="plugins/codemirror/mode/xml/xml.js"></script>
+<script src="plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="plugins/codemirror/mode/markdown/markdown.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+<script src="plugins/codemirror/addon/edit/matchbrackets.js"></script>
+<script src="plugins/codemirror/addon/comment/continuecomment.js"></script>
+<script src="plugins/codemirror/addon/comment/comment.js"></script>
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<script src="plugins/codemirror/addon/fold/foldcode.js"></script>
+<script src="plugins/codemirror/addon/fold/foldgutter.js"></script>
+<script src="plugins/codemirror/addon/fold/brace-fold.js"></script>
+<script src="plugins/codemirror/addon/fold/xml-fold.js"></script>
+<script src="plugins/codemirror/addon/fold/indent-fold.js"></script>
+<script src="plugins/codemirror/addon/fold/markdown-fold.js"></script>
+<script src="plugins/codemirror/addon/fold/comment-fold.js"></script>
+<script src="plugins/codemirror/addon/dialog/dialog.js"></script>
+<script src="plugins/codemirror/addon/search/searchcursor.js"></script>
+<script src="plugins/codemirror/addon/search/search.js"></script>
+<script src="plugins/codemirror/addon/scroll/annotatescrollbar.js"></script>
+<script src="plugins/codemirror/addon/search/jump-to-line.js"></script>
+<script src="plugins/codemirror/addon/search/matchesonscrollbar.js"></script>
+<script src="plugins/codemirror/addon/display/fullscreen.js"></script>
+<script src="https://unpkg.com/prettier@3.2.5/standalone.js"></script>
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.1/beautify-html.min.js"></script>
+<script src="dist/js/adminlte.init.js?v=3.2.0"></script>
+<script src="dist/js/init.js?v=3.2.2"></script>
+<script src="dist/js/script.js?v=3.2.10"></script>
+<script>
+    if (window.location.host.includes('localhost')) {
+        Blazor.start({
+            environment: "Development"
+        });
+    } else {
+        Blazor.start({
+            loadBootResource: function (t, n) {
+                switch (t) {
+                    case 'dotnetjs':
+                        return `/_framework/${n}`;
+                    default:
+                        return fetch(`/_framework/${n}`, {
+                            credentials: 'omit'
+                        });
+                }
+            }
+        });
+    }
+
+</script>
+</body>
+
+</html>
